@@ -1,0 +1,16 @@
+@media screen and (min-width:700px){
+  .header-inner{padding:1rem 2rem}
+  .nav-toggle{display:none}
+  .primary-nav{display:block;background:transparent}
+  .primary-nav ul{display:flex;gap:0}
+  .primary-nav a{color:#fff;background:#222;padding:.8rem 1rem;border-radius:0;margin-right:.25rem}
+  .primary-nav a.active{background:#111}
+  .container{display:block;padding:2rem}
+
+  .about-grid{display:grid;grid-template-columns:2fr 1fr;gap:1rem;align-items:start}
+  .photo{margin-top:0}
+  .course-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+  .course-card{align-items:flex-start;flex-direction:column}
+  .course-card .course-meta{margin-top:.5rem}
+  .site-footer{display:flex;justify-content:space-between;align-items:center}
+}
