@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Desert Sun Cafe",
+    "address": "5 Market Lane, Ilorin",
+    "phone": "(234) 555-0101",
+    "url": "https://desertsuncafe.example",
+    "image": "images/cafe.jpeg",
+    "membership": 3,
+    "description": "Local cafe offering light meals and community events."
+  },
+  {
+    "id": 2,
+    "name": "Sahara Travel Co.",
+    "address": "12 Caravan Rd",
+    "phone": "(234) 555-0102",
+    "url": "https://saharatravel.example",
+    "image": "images/travel.jpeg",
+    "membership": 2,
+    "description": "Tours & travel planning for the region."
+  },
+  {
+    "id": 3,
+    "name": "Oasis Hardware",
+    "address": "21 Industrial Way",
+    "phone": "(234) 555-0103",
+    "url": "https://oasishardware.example",
+    "image": "images/hardware.jpeg",
+    "membership": 1,
+    "description": "Tools and supplies for home and construction."
+  },
+  {
+    "id": 4,
+    "name": "Nomad Consulting",
+    "address": "4 Commerce Ave",
+    "phone": "(234) 555-0104",
+    "url": "https://nomadconsulting.example",
+    "image": "images/office1.jpeg",
+    "membership": 3,
+    "description": "Business consulting for small enterprises."
+  },
+  {
+    "id": 5,
+    "name": "Dune Digital",
+    "address": "8 Tech Park",
+    "phone": "(234) 555-0105",
+    "url": "https://dunedigital.example",
+    "image": "images/digital.jpeg",
+    "membership": 2,
+    "description": "Web design and digital marketing services."
+  },
+  {
+    "id": 6,
+    "name": "Palm Pharmacy",
+    "address": "2 Health St",
+    "phone": "(234) 555-0106",
+    "url": "https://palmpharmacy.example",
+    "image": "images/pharmacy.jpeg",
+    "membership": 1,
+    "description": "Prescriptions and over-the-counter medicines."
+  },
+  {
+    "id": 7,
+    "name": "Atlas Legal",
+    "address": "9 Court Square",
+    "phone": "(234) 555-0107",
+    "url": "https://atlaslegal.example",
+    "image": "images/law.jpeg",
+    "membership": 3,
+    "description": "Legal services for individuals and businesses."
+  }
+]

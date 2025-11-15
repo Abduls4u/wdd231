@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ilorin Chamber of Commerce — Directory</title>
+  <meta name="description" content="Directory of members for the Ilorin Chamber of Commerce. Find local businesses, contact info, and membership level.">
+  <meta name="author" content="Abdulsalam Abdulsomad .A. - WDD 231">
+
+  <!-- Open Graph / Facebook meta -->
+  <meta property="og:title" content="Ilorin Chamber of Commerce — Directory">
+  <meta property="og:description" content="Directory of members for the Ilorin Chamber of Commerce.">
+  <meta property="og:image" content="images/placeholder.png">
+  <meta property="og:url" content="https://your-site.example/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/arewaLogo.png">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="styles/normalize.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="index.html" aria-label="Ilorin Chamber of Commerce home">
+        <img src="images/arewaLogo.png" alt="" class="logo-img" />
+        <span class="site-title">Ilorin Chamber of Commerce</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+        <ul id="main-navigation" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Member Directory</h1>
+      <p class="lead">Support local businesses — browse members, view contact information, and learn membership benefits.</p>
+      <div class="view-controls" aria-hidden="false">
+        <label>View:</label>
+        <button id="gridBtn" class="btn" aria-pressed="true">Grid</button>
+        <button id="listBtn" class="btn" aria-pressed="false">List</button>
+        <label class="sr-only" for="filterSelect">Filter by membership</label>
+        <select id="filterSelect" aria-label="Filter by membership">
+          <option value="all">All membership levels</option>
+          <option value="3">Gold</option>
+          <option value="2">Silver</option>
+          <option value="1">Member</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="members" class="members grid" aria-live="polite">
+      <!-- member cards will be injected here by JS -->
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner footer-grid">
+      <div class="contact">
+        <h3>Ilorin Chamber of Commerce</h3>
+        <address>
+          10 Oja oba<br />
+          Ilorin, Nigeria 999<br />
+          <a href="mailto:info@ilorincc.org">info@ilorincc.org</a><br />
+          (234) 555-2300
+        </address>
+      </div>
+
+      <div class="social">
+        <h4>Follow</h4>
+        <ul class="social-list">
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="credits">
+        <p>WDD231 Class Project — <span id="studentName"> Abdulsalam Abdulsomad .A. </span></p>
+        <p>&copy; <span id="copyrightYear"></span> Ilorin Chamber of Commerce</p>
+        <p>Last Modified: <time id="lastModified" datetime="2025-11-15">2025-11-15</time></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
