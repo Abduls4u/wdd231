@@ -59,7 +59,7 @@ function createMemberCard(member){
 
 async function fetchMembers(){
   try {
-    const res = await fetch('scripts/members.json', {cache: "no-store"});
+    const res = await fetch('data/members.json', {cache: "no-store"});
     if (!res.ok) throw new Error('Network response not ok');
     membersData = await res.json();
     renderMembers(membersData);
