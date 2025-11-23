@@ -24,7 +24,7 @@
     "name": "Oasis Hardware",
     "address": "21 Industrial Way",
     "phone": "(234) 555-0103",
-    "url": "https://oasishardware.example",
+    "url": "https://oasishardware.example", 
     "image": "images/hardware.jpeg",
     "membership": 1,
     "description": "Tools and supplies for home and construction."
