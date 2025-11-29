@@ -14,7 +14,7 @@
   <meta property="og:title" content="Ilorin Chamber of Commerce — Directory">
   <meta property="og:description" content="Join the Ilorin Chamber of Commerce.">
   <meta property="og:image" content="./images/arewalogo.png">
-  <meta property="og:url" content="https://your-site.example/chamber/directory.html">
+  <meta property="og:url" content="https://abduls4u.github.io/chamber/directory.html">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
@@ -25,9 +25,11 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/join.css">
+
 </head>
 <body>
-  <header class="site-header">
+  <!-- <header class="site-header"> -->
     <div class="inner">
       <a class="logo" href="index.html" aria-label="Ilorin Chamber of Commerce home">
         <img src="images/arewalogo.png" alt="" class="logo-img" />
@@ -46,10 +48,141 @@
     </div>
   </header>
 
-  <main class="container">
-    Join content coming soon
+  <main class="join-container">
 
-  </main>
+        <section class="form-section">
+            <h2>Become a Member</h2>
+
+            <form method="get" action="thankyou.html">
+
+                <label>
+                    First Name:
+                    <input type="text" name="first" required title="Enter your first name" autocomplete="given-name">
+                </label>
+
+                <label>
+                    Last Name:
+                    <input type="text" name="last" required title="Enter your last name" autocomplete="family-name">
+                </label>
+
+                <label>
+                    Organizational Title:
+                    <input type="text" name="orgTitle" title="Organization title (letters, hyphens & spaces only)" 
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <label>
+                    Email Address:
+                    <input type="email" name="email" required title="Enter your email" autocomplete="email"
+                    placeholder="example@mail.com">
+                </label>
+
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel">
+                </label>
+
+                <label>
+                    Business / Organization:
+                    <input type="text" name="organization" required title="Business/Organization Name"
+                    autocomplete="organization">
+                </label>
+
+                <label>
+                    Membership Level:
+                    <select name="membership" required title="Choose a membership level">
+                        <option value="">-- Select Level --</option>
+                        <option value="np">NP Membership (Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit">Submit Application</button>
+
+            </form>
+        </section>
+
+        <!-- MEMBERSHIP CARDS -->
+        <section class="cards-section">
+            <h2>Membership Levels</h2>
+
+            <div class="card np" data-level="np">
+                <h3>NP Membership</h3>
+                <p>Perfect for non-profit organizations.</p>
+                <a href="#" data-open="modal-np">View Benefits</a>
+            </div>
+
+            <div class="card bronze" data-level="bronze">
+                <h3>Bronze Membership</h3>
+                <p>Beginner access with essential perks.</p>
+                <a href="#" data-open="modal-bronze">View Benefits</a>
+            </div>
+
+            <div class="card silver" data-level="silver">
+                <h3>Silver Membership</h3>
+                <p>More visibility and advantages.</p>
+                <a href="#" data-open="modal-silver">View Benefits</a>
+            </div>
+
+            <div class="card gold" data-level="gold">
+                <h3>Gold Membership</h3>
+                <p>Top-tier benefits and maximum exposure.</p>
+                <a href="#" data-open="modal-gold">View Benefits</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODALS -->
+    <dialog id="modal-np">
+        <h3>NP Membership Benefits</h3>
+        <ul>
+            <li>No membership fee</li>
+            <li>Access to community events</li>
+            <li>Basic business listing</li>
+        </ul>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze">
+        <h3>Bronze Benefits</h3>
+        <ul>
+            <li>Event discounts</li>
+            <li>Newsletter promotion</li>
+            <li>Priority event signups</li>
+        </ul>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver">
+        <h3>Silver Benefits</h3>
+        <ul>
+            <li>Spotlight ad slots</li>
+            <li>Training workshops</li>
+            <li>Enhanced directory listing</li>
+        </ul>
+        <button class="close">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold">
+        <h3>Gold Benefits</h3>
+        <ul>
+            <li>Premium homepage spotlight</li>
+            <li>Top-tier ad placement</li>
+            <li>Free event access</li>
+        </ul>
+        <button class="close">Close</button>
+    </dialog>
 
   <footer class="site-footer">
     <div class="inner footer-grid">
@@ -80,6 +213,7 @@
     </div>
   </footer>
 
+  <script src="scripts/join.js"></script>
   <script src="scripts/main.js" defer></script>
 </body>
 </html>
