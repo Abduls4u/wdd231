@@ -1,0 +1,30 @@
+@media (min-width: 641px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "c1 c2"
+            "c3 c4"
+            "c5 c6"
+            "c7 c8";
+    }
+}
+
+/* Large screens (1025px and above) */
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "c1 c2 c3 c4"
+            "c5 c6 c7 c8";
+    }
+
+    /* Hover effect ONLY on desktop */
+    .card img {
+        transition: transform .3s ease, filter .3s ease;
+    }
+
+    .card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+    }
+}

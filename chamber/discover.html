@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ilorin Chamber of Commerce — Directory</title>
-  <meta name="description" content="Discover local businesses and services for the Ilorin Chamber of Commerce. Find local businesses, contact info, and membership level.">
+  <title>Ilorin Chamber of Commerce — Join</title>
+  <meta name="description" content="Join the Ilorin Chamber of Commerce. Find local businesses, contact info, and membership level.">
   <meta name="author" content="Abdulsalam Abdulsomad .A. - WDD 231">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +12,9 @@
 
   <!-- Open Graph / Facebook meta -->
   <meta property="og:title" content="Ilorin Chamber of Commerce — Directory">
-  <meta property="og:description" content="Discover local businesses and services in Ilorin Chamber of Commerce.">
+  <meta property="og:description" content="Join the Ilorin Chamber of Commerce.">
   <meta property="og:image" content="./images/arewalogo.png">
-  <meta property="og:url" content="https://your-site.example/chamber/directory.html">
+  <meta property="og:url" content="https://abduls4u.github.io/chamber/directory.html">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
@@ -25,12 +25,16 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles/base.css">
+
+  <link rel="stylesheet" href="styles/discover.css">
+  <link rel="stylesheet" href="styles/medium.css">
+
 </head>
 <body>
-  <header class="site-header">
+  <!-- <header class="site-header"> -->
     <div class="inner">
-      <a class="logo" href="index.html" aria-label="Ilorin Chamber of Commerce discover page">
-        <img src="images/arewalogo.png" alt="" class="logo-img" />
+      <a class="logo" href="index.html" aria-label="Ilorin Chamber of Commerce home">
+        <img src="images/arewalogo.png" alt="" class="logo-img" >
         <span class="site-title">Ilorin Chamber of Commerce</span>
       </a>
 
@@ -44,20 +48,24 @@
         </ul>
       </nav>
     </div>
-  </header>
+  <main class="discover-container">
 
-  <main class="container">
-   discover content coming soon
-  </main>
+        <!-- Visit Message -->
+         <h2>Discover Ilorin</h2>
+        <section id="visit-message" class="visit-msg"></section>
 
+        <!-- Cards Container -->
+        <section class="grid-container" id="cards"></section>
+
+    </main>
   <footer class="site-footer">
     <div class="inner footer-grid">
       <div class="contact">
         <h3>Ilorin Chamber of Commerce</h3>
         <address>
-          10 Oja oba<br />
-          Ilorin, Nigeria 999<br />
-          <a href="mailto:info@ilorincc.org">info@ilorincc.org</a><br />
+          10 Oja oba<br >
+          Ilorin, Nigeria 999<br >
+          <a href="mailto:info@ilorincc.org">info@ilorincc.org</a><br >
           (234) 555-2300
         </address>
       </div>
@@ -80,5 +88,6 @@
   </footer>
 
   <script src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/discover.js" ></script>
 </body>
 </html>
